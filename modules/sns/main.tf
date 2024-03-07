@@ -1,5 +1,5 @@
 resource "aws_sns_topic" "example" {
-  name = "my-first-sns-topic"  
+  name = var.topic_name
 }
 
 resource "aws_sns_topic_subscription" "sms_subscription" {
