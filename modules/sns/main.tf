@@ -5,7 +5,7 @@ resource "aws_sns_topic" "example" {
 resource "aws_sns_topic_subscription" "sms_subscription" {
   topic_arn = aws_sns_topic.example.arn
   protocol  = "sms"
-  endpoint  = "+573203278909"  
+  endpoint  = var.phone  
 }
 
 resource "aws_sns_topic_policy" "example_policy" {

@@ -20,3 +20,9 @@ variable "enable_encryption" {
     type        = bool
     default     = false
 }
+
+variable "phone" {
+    description = "Phone number"
+    type        = string
+    default     = "+573201111111"
+}
