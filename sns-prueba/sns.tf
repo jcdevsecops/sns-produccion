@@ -1,4 +1,4 @@
 module "sns-digital-card" {
-    source = "./modules/sns"
+    source = "../modules/sns"
 
 }
